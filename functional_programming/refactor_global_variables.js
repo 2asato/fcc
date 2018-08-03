@@ -28,7 +28,8 @@ function remove (arr, bookName) {
 
 // var newBookList = add(bookList, 'A Brief History of Time');
 var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
-// var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
 
 console.log(bookList);
 console.log(newerBookList);
+console.log(newestBookList);
