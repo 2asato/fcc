@@ -1,7 +1,8 @@
 function nonMutatingConcat(original, attach) {
   // Add your code below this line
-  
-
+  let concated = original.concat(attach);
+  console.log(concated);
+  return concated;
   // Add your code above this line
 }
 var first = [1, 2, 3];
