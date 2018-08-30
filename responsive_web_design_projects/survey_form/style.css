@@ -32,3 +32,10 @@ div {
   padding: 5px;
   margin: 10px;
 }
+
+#dropdown {
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+}
