@@ -39,3 +39,16 @@ div {
   padding: 5px;
   margin: 10px;
 }
+
+.radio {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.userRatings {
+  float: left;
+  margin-right: 5px;
+}
