@@ -52,3 +52,19 @@ div {
   float: left;
   margin-right: 5px;
 }
+
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.comment-box {
+  height: 50px;
+  resize: vertical;
+  padding: 5px;
+  margin: 10px;
+
+}
