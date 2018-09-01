@@ -1,3 +1,17 @@
+body {
+  background-color: lightblue;
+}
+
+#main-div {
+  background-color: white;
+  width: 75%;
+  /*centers div*/
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
 h1, p {
   text-align: center;
 }
@@ -67,4 +81,14 @@ div {
   padding: 5px;
   margin: 10px;
 
+}
+
+#submit-button {
+  height: 40px;
+  background-color: blue;
+  color: white;
+  width: 90px;
+  border-radius: 4px;
+  margin: 10px;
+  font-size: 1em;
 }
