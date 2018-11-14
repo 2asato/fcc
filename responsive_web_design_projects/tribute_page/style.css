@@ -1,14 +1,15 @@
 body {
   text-align: center;
+  background-color: lightgrey;
 }
 
 body {
   text-align: center;
-  color: white;
+  color: teal;
 }
 
 #main {
-  background-color: teal;
+  background-color: white;
   /*white space around*/
   margin: 30px auto;
   /*space between border and content*/
@@ -54,10 +55,9 @@ ul {
 }
 
 li {
-  margin: 10px;
+  margin: 15px;
 }
 
-blockquote {
-  font-style: italic;
-
+#more-info {
+  margin-top: 40px;
 }
