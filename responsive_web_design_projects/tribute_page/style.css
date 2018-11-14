@@ -2,38 +2,55 @@ body {
   text-align: center;
 }
 
+body {
+  text-align: center;
+  color: white;
+}
+
 #main {
-  background-color: lightgrey;
+  background-color: teal;
   /*white space around*/
   margin: 30px auto;
   /*space between border and content*/
-  padding: 15px;
+  padding: 20px;
   /*curved corners*/
   border-radius: 5px;
 }
 
-#img-div {
-  background-color: white;
-  /*margin: -5px;*/
-  margin-top: 20px;
+#title {
+  font-size: 5em;
+  margin-bottom: -40px;
+  font-family: anton;
+}
+
+#nickname {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: anton;
+}
+
+#image {
   width: 100%;
-}
-
-img {
-  max-width: 100%;
-  display: block;
   height: auto;
-  margin: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-#img-caption {
-  padding: 15px;
+#tribute-info {
+  margin-top: 40px;
+}
+
+#timeline-title {
+  font-size: 36px;
 }
 
 ul {
-  max-width: 550px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
+  list-style-type: none;
 }
 
 li {
