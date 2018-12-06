@@ -114,17 +114,12 @@ var watchList = [
 
 // Add your code below this line
 
-var filteredList = watchList.filter(function(item) {
-  let num = Number(item.imdbRating);
-    if (num >= 8) {
-      return num >= 8;
-    }
-  }).map(function(item) {
-    return {
-      title: item.Title,
-      rating: item.imdbRating
-    }
-  });
+var filteredList = watchList.map(function(movie) {
+  return {title: movie["Title"],
+         rating: movie["imdbRating"]}
+       }).filter((movie) =>
+    movie.rating >= 8
+);
 
 
 
