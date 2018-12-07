@@ -114,24 +114,76 @@ var watchList = [
 
 // Add your code below this line
 
-let nolanMovies = watchList.filter(function(item) {
-  return item.Director == "Christopher Nolan";
-})
-console.log(nolanMovies);
 
-let nolanRatings = nolanMovies.map(function(item) {
-  let ratingNum = Number(item.imdbRating);
-  return ratingNum;
-});
+let nolanMovies = watchList.filter((movie) => movie["Director"] === "Christopher Nolan");
+// console.log(nolanMovies);
 
-let averageRating = nolanRatings.reduce(function(total, amount, index, array) {
+let nolanRatings = nolanMovies.map((movie) =>
+  Number(movie["imdbRating"]));
+// console.log(nolanRatings);
+
+let averageRating = nolanRatings.reduce((total, amount, index, array) => {
   total += amount;
-  if (index === array.length-1) {
+  if( index === array.length-1) {
     return total/array.length;
-  } else {
+  }else {
     return total;
   }
 });
+
+
+console.log(nolanRatingAvg);
+
+
+
+// freecodecamp solution
+var averageRating = watchList.filter(x => x.Director === "Christopher Nolan").map(x => Number(x.imdbRating)).reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let nolanMovies = watchList.filter(function(item) {
+//   return item.Director == "Christopher Nolan";
+// })
+// console.log(nolanMovies);
+//
+// let nolanRatings = nolanMovies.map(function(item) {
+//   let ratingNum = Number(item.imdbRating);
+//   return ratingNum;
+// });
+//
+// let averageRating = nolanRatings.reduce(function(total, amount, index, array) {
+//   total += amount;
+//   if (index === array.length-1) {
+//     return total/array.length;
+//   } else {
+//     return total;
+//   }
+// });
 
 
 
