@@ -1,15 +1,37 @@
 function confirmEnding(str, target) {
   // "Never give up and good luck will find you."
   // -- Falcor
-  if (str.substring(str.length - target.length, str.length) === target){
-    console.log(true);
-    // return true;
-  } else {
-    console.log(false);
+  if (str.substring(str.length - target.length, str.length) === target) {
+    return true;
   }
+  return false
 }
 
-confirmEnding("Bastian", "r");
+confirmEnding("Bastian", "n");
+
+
+
+
+
+
+
+
+
+
+
+
+// function confirmEnding(str, target) {
+//   // "Never give up and good luck will find you."
+//   // -- Falcor
+//   if (str.substring(str.length - target.length, str.length) === target){
+//     console.log(true);
+//     // return true;
+//   } else {
+//     console.log(false);
+//   }
+// }
+//
+// confirmEnding("Bastian", "r");
 
 
 
