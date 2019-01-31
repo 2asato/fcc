@@ -1,17 +1,42 @@
 function repeatStringNumTimes(str, num) {
   // repeat after me
-  // create array to store new strings
-  let strArr = [];
-  // push the string into strArr num times
-  for (let i = 0; i < num; i++) {
-    strArr.push(str)
+  let repeatedString = "";
+  while (num > 0) {
+    repeatedString+=str;
+    num--;
   }
-  // return strArr;
-  // combine strArr into one string
-  console.log(strArr.join(""));
+  return repeatedString;
 }
 
 repeatStringNumTimes("abc", 3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function repeatStringNumTimes(str, num) {
+//   // repeat after me
+//   // create array to store new strings
+//   let strArr = [];
+//   // push the string into strArr num times
+//   for (let i = 0; i < num; i++) {
+//     strArr.push(str)
+//   }
+//   // return strArr;
+//   // combine strArr into one string
+//   console.log(strArr.join(""));
+// }
+//
+// repeatStringNumTimes("abc", 3);
 
 
 
