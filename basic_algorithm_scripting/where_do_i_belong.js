@@ -1,13 +1,33 @@
 function getIndexToIns(arr, num) {
   // Find my place in this sorted array.
-  arr.unshift(num);
-  console.log(arr);
-  arr.sort(function(a, b) {return a-b});
-  console.log(arr);
-  console.log(arr.indexOf(num));
+  arr.push(num);
+  let sorted = arr.sort(function(a, b){return a - b});
+  let spot = sorted.indexOf(num);
+  console.log(spot);
 }
 
 getIndexToIns([2, 5, 10], 15);
+
+
+
+
+
+
+
+
+
+
+
+// function getIndexToIns(arr, num) {
+//   // Find my place in this sorted array.
+//   arr.unshift(num);
+//   console.log(arr);
+//   arr.sort(function(a, b) {return a-b});
+//   console.log(arr);
+//   console.log(arr.indexOf(num));
+// }
+//
+// getIndexToIns([2, 5, 10], 15);
 
 // add number
 // sort array
