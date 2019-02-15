@@ -6,6 +6,9 @@ function convertToRoman(num) {
     while (numbers[i] <= num) {
       romaned += romanNums[i];
       num -= numbers[i];
+      console.log(num);
+      console.log(numbers[i]);
+      console.log(romanNums[i]);
     }
   }
  return romaned;
