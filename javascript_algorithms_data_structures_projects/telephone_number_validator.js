@@ -1,5 +1,6 @@
 function telephoneCheck(str) {
   // Good luck!
+  let phoneNumber = //;
   return true;
 }
 
