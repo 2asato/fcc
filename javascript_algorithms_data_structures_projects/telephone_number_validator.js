@@ -1,6 +1,7 @@
 function telephoneCheck(str) {
   // Good luck!
   let phoneNumber = //;
+  regex.test(str);
   return true;
 }
 
