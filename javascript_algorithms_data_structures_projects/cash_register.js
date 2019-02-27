@@ -1,12 +1,19 @@
 function checkCashRegister(price, cash, cid) {
   let change = cash - price;
+  let amountPerDenomination = 0;
+  let totalInDrawer = 0;
+  let moneyArr = [];
   for (let i = 0; i < cid.length; i++) {
     for (let j = 0; j < cid[i].length; j++) {
-      console.log(cid[i][1]);
+      amountPerDenomination = cid[i][1];
     }
-    // console.log(cid[i]);
+    moneyArr.push(amountPerDenomination)
   }
-  }
+  totalInDrawer = moneyArr.reduce(function(a, b) {
+    return a + b;
+  });
+  console.log(totalInDrawer);
+}
   // Here is your change, ma'am.
   // return change;
 
